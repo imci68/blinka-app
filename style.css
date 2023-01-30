@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+html{
+  height: 100%;
+}
+
+body{
+  font-family: 'Fjalla One', sans-serif;
+  background: #00425A;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  color: #FC7300 ;
+  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px; 
+}
+
+.sub-title{
+  text-align: center;
+  font-size:24px;
+  margin-top: 30px;
+  color: #FC7300 ;
+  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px; 
+}
+
+#level-selector {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn, .btn-stop {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: #1F8A70;
+  border: 2px solid black;
+  border-radius: 0.6em;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 700;
+  border-color: black;
+}
+
+.btn:hover{
+    color: black;
+    outline: 0;
+    background-position: 0;
+    background-color: #BFDB38;
+    border-color: black;
+}
+
+.btn:focus{
+  background-color: #BFDB38;
+  outline: 0;
+  color: black;
+  border-color: black;
+}
+
+.btn-stop {
+  background-color: #e55643;
+}
+
+.btn-stop:hover{
+  color: black;
+  outline: 0;
+  background-color: #e55643;
+  background-position: 0;
+  border-color: black;
+}
+
+button {
+  margin: 10px;
+}
+
+#game-container {
+  height: 300px;
+  width: 500px;
+  margin: 20px auto;
+  display: none;
+  border-color: black;
+}
+
+#video-container {
+  text-align: center;
+}
+#video {
+  width: 500px;
+  height: 300px;
+}
+
+.copyright{
+  color: white;
+}
+  

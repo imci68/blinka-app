@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BLINKA</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <section class="title">
+    <h1>
+      <span class="title">Welcome </span>
+      <span class="title">To </span>
+      <span class="title">BLINKA </span>
+      <span class="title">!</span>
+    </h1>
+    <h3 class="sub-title">Revolutionary app to enhance football player's cognitive agility</h3>
+  </section>
+    
+  <div class="row d-flex justify-content-center col-6 mx-auto">
+    <div class="btn-group" role="group">
+      <button class="btn btn-primary" onclick="startGame(1)">L1: Elite</button>
+      <button class="btn btn-primary" onclick="startGame(2)">L2: Pro</button>
+      <button class="btn btn-primary" onclick="startGame(3)">L3: Advanced</button>
+      <button class="btn btn-primary" onclick="startGame(4)">L4: Intermediate</button>
+      <button class="btn btn-primary" onclick="startGame(5)">L5: Beginner</button>
+      <button class="btn btn-primary" onclick="startGame(6)">L6: Novice</button>
+    </div>
+  </div>
+  <div id="game-container" class="mt-5" style="height: 300px; width: 500px; margin: 0 auto; display: none;"></div>
+  <div class="d-flex justify-content-center mt-5">
+    <div id="video-container" style="text-align: center;">
+      <iframe id = "video" style="border:2px solid black;" src="https://www.youtube.com/embed/xE_fQGaC4vI" title="GROUP SOCCER TRAINING IDEAS | Joner Football" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center mt-3">
+    <button class="btn-stop btn-danger" onClick="stopGame()">Stop Game</button>
+  </div>
+  <footer class="footer d-flex justify-content-center">
+    <p class="copyright">Copyright &copy; Blinka 2023</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
