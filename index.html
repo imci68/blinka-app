@@ -15,7 +15,7 @@
     </h1>
     <h3 class="sub-title">Revolutionary app to enhance football player's cognitive agility</h3>
   </section>
-    
+<!--     
   <div class="row d-flex justify-content-center col-6 mx-auto">
     <div class="btn-group" role="group">
       <button class="btn btn-primary" onclick="startGame(1)">L1: Novice</button>
@@ -25,7 +25,24 @@
       <button class="btn btn-primary" onclick="startGame(5)">L5: Pro</button>
       <button class="btn btn-primary" onclick="startGame(6)">L6: Elite</button>
     </div>
+  </div> -->
+  <div class="row d-flex justify-content-center col-6 mx-auto">
+    <select class="custom-select" id="levelSelect">
+      <option selected disabled>Choose level</option>
+      <option value="1">L1: Novice</option>
+      <option value="2">L2: Beginner</option>
+      <option value="3">L3: Intermediate</option>
+      <option value="4">L4: Advanced</option>
+      <option value="5">L5: Pro</option>
+      <option value="6">L6: Elite</option>
+    </select>
+    <button class="btn btn-primary" id="startBtn" disabled onclick="startGame(document.getElementById('levelSelect').value)">Start</button>
   </div>
+  <script>
+    document.getElementById("levelSelect").addEventListener("change", function() {
+      document.getElementById("startBtn").disabled = !this.value;
+    });
+  </script>
   <div id="game-container" class="mt-5" style="height: 300px; width: 500px; margin: 0 auto; display: none;"></div>
   <div class="d-flex justify-content-center mt-5">
     <div id="video-container" style="text-align: center;">
