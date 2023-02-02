@@ -1,61 +1,72 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>BLINKA</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <section class="title">
-    <h1>
-      <span class="title">Welcome </span>
-      <span class="title">To </span>
-      <span class="title">BLINKA </span>
-      <span class="title">!</span>
-    </h1>
-    <h3 class="sub-title">Revolutionary app to enhance football player's cognitive agility</h3>
-  </section>
-<!--     
-  <div class="row d-flex justify-content-center col-6 mx-auto">
-    <div class="btn-group" role="group">
-      <button class="btn btn-primary" onclick="startGame(1)">L1: Novice</button>
-      <button class="btn btn-primary" onclick="startGame(2)">L2: Beginner</button>
-      <button class="btn btn-primary" onclick="startGame(3)">L3: Intermediate</button>
-      <button class="btn btn-primary" onclick="startGame(4)">L4: Advanced</button>
-      <button class="btn btn-primary" onclick="startGame(5)">L5: Pro</button>
-      <button class="btn btn-primary" onclick="startGame(6)">L6: Elite</button>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Test Page</title>
+  </head>
+  <body style="height: 100%;">
+    <header class="bg-info text-center" style="height: 10%">
+      <h3 class="text-light">Welcome to BLINKA!!</h3>
+    </header>
+    <div class="container-fluid" id="start-page" style="height: 85%">
+      <div class="row h-100">
+        <div class="col-4 bg-primary">
+          <h2 class="text-center p-6">Left Page</h2>
+          <div class="row d-flex justify-content-center col-6 mx-auto">
+            <select class="custom-select" id="levelSelect">
+              <option selected disabled>Choose level</option>
+              <option value="1">L1: Novice</option>
+              <option value="2">L2: Beginner</option>
+              <option value="3">L3: Intermediate</option>
+              <option value="4">L4: Advanced</option>
+              <option value="5">L5: Pro</option>
+              <option value="6">L6: Elite</option>
+            </select>
+            <button class="btn btn-danger" id="startBtn" disabled onclick="startGame(document.getElementById('levelSelect').value)">Start</button>
+          </div>
+          <script>
+            document.getElementById("levelSelect").addEventListener("change", function() {
+              document.getElementById("startBtn").disabled = !this.value;
+            });
+          </script>
+          <div class="d-flex justify-content-center mt-3"></div>
+        </div>
+        <div class="col-4 bg-warning">
+          <h2 class="text-center p-6">Middle Page</h2>
+          <div class="d-flex justify-content-center mt-5">
+            <div id="video-container" style="text-align: center;">
+              <iframe id="video" style="border:2px solid black;" src="https://www.youtube.com/embed/xE_fQGaC4vI" title="GROUP SOCCER TRAINING IDEAS | Joner Football" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 bg-danger">
+          <h2 class="text-center p-6">Right Page</h2>
+          <div class="d-flex justify-content-center mt-5">
+            <div id="video-container" style="text-align: center;">
+              <iframe id="video" style="border:2px solid black;" src="https://www.youtube.com/embed/kd2KEHvK-q8" title="GROUP SOCCER TRAINING IDEAS | Joner Football" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div> -->
-  <div class="row d-flex justify-content-center col-6 mx-auto">
-    <select class="custom-select" id="levelSelect">
-      <option selected disabled>Choose level</option>
-      <option value="1">L1: Novice</option>
-      <option value="2">L2: Beginner</option>
-      <option value="3">L3: Intermediate</option>
-      <option value="4">L4: Advanced</option>
-      <option value="5">L5: Pro</option>
-      <option value="6">L6: Elite</option>
-    </select>
-    <button class="btn btn-primary" id="startBtn" disabled onclick="startGame(document.getElementById('levelSelect').value)">Start</button>
-  </div>
-  <script>
-    document.getElementById("levelSelect").addEventListener("change", function() {
-      document.getElementById("startBtn").disabled = !this.value;
-    });
-  </script>
-  <div id="game-container" class="mt-5" style="height: 300px; width: 500px; margin: 0 auto; display: none;"></div>
-  <div class="d-flex justify-content-center mt-5">
-    <div id="video-container" style="text-align: center;">
-      <iframe id = "video" style="border:2px solid black;" src="https://www.youtube.com/embed/xE_fQGaC4vI" title="GROUP SOCCER TRAINING IDEAS | Joner Football" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="container-fluid" id="game-page" style="display: none; position: relative; height: 80%; margin-top: 5%;">
+      <div id="game-container" style="display: flex; justify-content: center; align-items: center; height: 80%; width: 70%; font-size: 100px;"></div>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <button class="btn-stop btn-danger" onClick="stopGame()">Stop Game</button>
+      </div>
     </div>
-  </div>
-  <div class="d-flex justify-content-center mt-3">
-    <button class="btn-stop btn-danger" onClick="stopGame()">Stop Game</button>
-  </div>
-  <footer class="footer d-flex justify-content-center">
-    <p class="copyright">Copyright &copy; Blinka 2023</p>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+    <footer class="bg-secondary text-center" style="height: 5%">
+      <p class="text-white">Copyright &copy; 2022</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

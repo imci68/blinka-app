@@ -1,27 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
-html{
+html {
   height: 100%;
 }
 
-body{
-  font-family: 'Fjalla One', sans-serif;
-  background: #00425A;
+body {
+  font-family: "Fjalla One", sans-serif;
+  background: #00425a;
 }
 
 .title {
   text-align: center;
   font-size: 40px;
   margin-top: 10px;
-  color: #FC7300 ;
-  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px; 
+  color: #fc7300;
+  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px,
+    #533d4a 4px 4px;
 }
 
-.sub-title{
+.sub-title {
   text-align: center;
-  font-size:24px;
+  font-size: 24px;
   margin-top: 30px;
-  color: #FC7300 ;
-  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px; 
+  color: #fc7300;
+  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px,
+    #533d4a 4px 4px;
 }
 
 #level-selector {
@@ -29,10 +31,11 @@ body{
   margin-top: 10px;
 }
 
-.btn, .btn-stop {
+.btn,
+.btn-stop {
   box-sizing: border-box;
   appearance: none;
-  background-color: #1F8A70;
+  background-color: #1f8a70;
   border: 2px solid black;
   border-radius: 0.6em;
   color: #fff;
@@ -47,21 +50,21 @@ body{
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-weight: 700;
   border-color: black;
 }
 
-.btn:hover{
-    color: black;
-    outline: 0;
-    background-position: 0;
-    background-color: #BFDB38;
-    border-color: black;
+.btn:hover {
+  color: black;
+  outline: 0;
+  background-position: 0;
+  background-color: #bfdb38;
+  border-color: black;
 }
 
-.btn:focus{
-  background-color: #BFDB38;
+.btn:focus {
+  background-color: #bfdb38;
   outline: 0;
   color: black;
   border-color: black;
@@ -71,7 +74,7 @@ body{
   background-color: #e55643;
 }
 
-.btn-stop:hover{
+.btn-stop:hover {
   color: black;
   outline: 0;
   background-color: #e55643;
@@ -95,11 +98,10 @@ button {
   text-align: center;
 }
 #video {
-  width: 500px;
+  width: 400px;
   height: 300px;
 }
 
-.copyright{
+.copyright {
   color: white;
 }
-  
