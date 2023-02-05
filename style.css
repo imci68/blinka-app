@@ -1,7 +1,26 @@
+@media (max-width: 767px) {
+  #video-container {
+    padding-bottom: 75%;
+  }
+  .description-text {
+    width: 100%;
+    text-align: center;
+  }
+  .logo {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 html {
   height: 100%;
 }
+
+
+
 
 body {
   background: #00425a;
@@ -11,6 +30,7 @@ body {
   height: 15%;
   position: absolute;
   padding-left: 0px;
+
 }
 
 .title-text{
@@ -24,12 +44,13 @@ body {
 }
 
 .description-text{
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   color: #000000;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-bottom: 10px;
   position: relative;
+
 }
 
 #level-selector {
@@ -123,12 +144,19 @@ button {
   border-color: black;
 }
 
+
 #video-container {
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 #video {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+
 }
 
 .footer {
