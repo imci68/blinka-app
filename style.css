@@ -4,31 +4,59 @@ html {
 }
 
 body {
-  font-family: "Fjalla One", sans-serif;
   background: #00425a;
 }
 
-.title {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 10px;
-  color: #fc7300;
-  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px,
-    #533d4a 4px 4px;
+.logo{
+  height: 125px;
+  position: absolute;
+  padding-left: 0px;
 }
 
-.sub-title {
+.title-text{
   text-align: center;
-  font-size: 24px;
-  margin-top: 30px;
-  color: #fc7300;
-  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px,
-    #533d4a 4px 4px;
+  padding-top: 12px;
+  color: black;
+  font-size: 50px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+.description-text{
+  font-size: 28px;
+  text-align: center;
+  color: #000000;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 24%;
+  padding-bottom: 10px;
 }
 
 #level-selector {
   text-align: center;
   margin-top: 10px;
+  color: black;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.game-body, .promo-body, .video-body{
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  padding-top: 25px;
+}
+
+#startBtn{
+  background-color: #38E54D;
+  border: #38E54D;
+  width: 100%;
+  height: 50px;
+}
+
+.start-btn-text{
+  color: black;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+
 }
 
 .btn,
@@ -87,9 +115,9 @@ button {
 }
 
 #game-container {
-  height: 300px;
-  width: 500px;
-  margin: 20px auto;
+  height: 250px;
+  width: 400px;
+  margin: 5px auto;
   display: none;
   border-color: black;
 }
@@ -102,6 +130,9 @@ button {
   height: 300px;
 }
 
-.copyright {
-  color: white;
+.footer {
+  background-color: black;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }

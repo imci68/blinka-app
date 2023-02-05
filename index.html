@@ -5,27 +5,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Test Page</title>
+    <title>Blinka</title>
+    <link rel="icon" type="image/x-icon" href="media/blinka.svg">
   </head>
   <body style="height: 100%;">
-    <header class="bg-info text-center" style="height: 10%">
-      <h3 class="text-light">Welcome to BLINKA!!</h3>
+    <header class="bg-info" style="height: 15%">
+      <img class='logo' src="media/blinka.svg" alt="Blinka Logo">
+      <h3 class="title-text">BLINKA</h3>
+      <span class="description-text">Revolutionary app to enhance football player's cognitive ability</span>
     </header>
     <div class="container-fluid" id="start-page" style="height: 85%">
       <div class="row h-100">
         <div class="col-4 bg-primary">
-          <h2 class="text-center p-6">Left Page</h2>
+          <h2 class="game-body">Let's Begin</h2>
+          <br>
+
           <div class="row d-flex justify-content-center col-6 mx-auto">
             <select class="custom-select" id="levelSelect">
-              <option selected disabled>Choose level</option>
-              <option value="1">L1: Novice</option>
-              <option value="2">L2: Beginner</option>
-              <option value="3">L3: Intermediate</option>
-              <option value="4">L4: Advanced</option>
-              <option value="5">L5: Pro</option>
-              <option value="6">L6: Elite</option>
+              <option selected disabled>Select a level</option>
+              <option value="6">L1: Novice</option>
+              <option value="5">L2: Beginner</option>
+              <option value="4">L3: Intermediate</option>
+              <option value="3">L4: Advanced</option>
+              <option value="2">L5: Pro</option>
+              <option value="1">L6: Elite</option>
             </select>
-            <button class="btn btn-danger" id="startBtn" disabled onclick="startGame(document.getElementById('levelSelect').value)">Start</button>
+            <button class="btn btn-danger" id="startBtn" disabled onclick="startGame(document.getElementById('levelSelect').value)"><span class="start-btn-text">Start Game</span></button>
           </div>
           <script>
             document.getElementById("levelSelect").addEventListener("change", function() {
@@ -35,7 +40,7 @@
           <div class="d-flex justify-content-center mt-3"></div>
         </div>
         <div class="col-4 bg-warning">
-          <h2 class="text-center p-6">Middle Page</h2>
+          <h2 class="promo-body">Promo</h2>
           <div class="d-flex justify-content-center mt-5">
             <div id="video-container" style="text-align: center;">
               <iframe id="video" style="border:2px solid black;" src="https://www.youtube.com/embed/xE_fQGaC4vI" title="GROUP SOCCER TRAINING IDEAS | Joner Football" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -43,23 +48,23 @@
           </div>
         </div>
         <div class="col-4 bg-danger">
-          <h2 class="text-center p-6">Right Page</h2>
+          <h2 class="video-body">Watch More</h2>
           <div class="d-flex justify-content-center mt-5">
             <div id="video-container" style="text-align: center;">
-              <iframe id="video" style="border:2px solid black;" src="https://www.youtube.com/embed/kd2KEHvK-q8" title="GROUP SOCCER TRAINING IDEAS | Joner Football" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe id="video" style="border:2px solid black;" src="https://www.youtube.com/embed/Asmzihl4qww" title="IMPROVE your game with these 10 essential drills" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="container-fluid" id="game-page" style="display: none; position: relative; height: 80%; margin-top: 5%;">
-      <div id="game-container" style="display: flex; justify-content: center; align-items: center; height: 80%; width: 70%; font-size: 100px;"></div>
+      <div id="game-container" style="display: flex; justify-content: center; align-items: center; height: 80%; width: 70%; font-size: 100px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 800;"></div>
       <div style="display: flex; justify-content: center; align-items: center;">
         <button class="btn-stop btn-danger" onClick="stopGame()">Stop Game</button>
       </div>
     </div>
-    <footer class="bg-secondary text-center" style="height: 5%">
-      <p class="text-white">Copyright &copy; 2022</p>
+    <footer class="footer" style="height: 5%">
+      <p class="text-white" style="padding-top: 10px;">Copyright &copy; 2023</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
