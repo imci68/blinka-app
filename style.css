@@ -8,7 +8,7 @@ body {
 }
 
 .logo{
-  height: 125px;
+  height: 15%;
   position: absolute;
   padding-left: 0px;
 }
@@ -17,18 +17,19 @@ body {
   text-align: center;
   padding-top: 12px;
   color: black;
-  font-size: 50px;
+  font-size: 38px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
   
 }
 
 .description-text{
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
   color: #000000;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding-left: 24%;
   padding-bottom: 10px;
+  position: relative;
 }
 
 #level-selector {
