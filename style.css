@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   #video-container {
     padding-bottom: 75%;
   }
@@ -10,7 +10,52 @@
     width: 100%;
     display: block;
     margin: 0 auto;
+    float: left;
   }
+} */
+
+
+@media (max-width: 500px) {
+  #video-container {
+    padding-bottom: 75%;
+  }
+  .description-text {
+    width: 100%;
+    text-align: center;
+    font-size: 1px;
+  }
+  /* .description-text {
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 3px;
+  } */
+  /* .logo {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    float: left;
+  } */
+}
+
+.bg-info {
+  display: block; 
+  text-align: center;
+  top: 0;
+  float: left;
+}
+
+.logo {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+.description-text {
+  font-size: 1.5vw;
+  color: #00425a;
+  text-align: center;
 }
 
 
@@ -44,7 +89,7 @@ body {
 }
 
 .description-text{
-  font-size: 18px;
+  /* font-size: 18px; */
   text-align: center;
   color: #000000;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -164,4 +209,16 @@ button {
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    float: left;
+    display: block;
+    background-color: #e55643;
+  }
+  
+  .header-text {
+    float: none;
+  }
 }
