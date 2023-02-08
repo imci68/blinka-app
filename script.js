@@ -104,7 +104,7 @@ function stopGame(level) {
     if (counter > NUM_FLASHES) {
         gameBox.style.backgroundColor = 'transparent';
         gameBox.innerHTML = `Congratulations!`;
-        gameBox.style.color = "white"
+        gameBox.style.color = 'white';
         console.log("congratulations!");
         counter = 0;
         setTimeout(() => {
