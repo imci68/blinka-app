@@ -62,6 +62,10 @@ body {
   background: #00425a;
 }
 
+.container-fluid {
+  overflow-y: scroll;
+}
+
 .logo{
   height: 15%;
   position: absolute;
