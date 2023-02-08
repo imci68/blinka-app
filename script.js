@@ -16,7 +16,7 @@ let counter = 0;
 let previousColor;
 let countdown = 3;
 
-if ('serviceWorker' in navigator) {
+/*if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
         navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
             console.log('Service worker registered with scope: ', registration.scope);
@@ -24,7 +24,7 @@ if ('serviceWorker' in navigator) {
             console.error('Service worker registration failed: ', err);
         });
     });
-}
+}*/
 
 function startGame(level) {
     countdown = 3;
@@ -45,6 +45,7 @@ function startGame(level) {
             clearInterval(countdownInterval);
 
             gameBox.innerHTML = '';
+            gameBox.style.color = "white"
             if (!startBeepPlayed) {
                 beepSound.play(); // Play the start beep sound
                 startBeepPlayed = true;
@@ -53,7 +54,7 @@ function startGame(level) {
         } else {
 
             gameBox.innerHTML = countdown;
-            console.log(countdown);
+            //console.log(countdown);
             countdown--;
         }
     }, 1000);
@@ -74,7 +75,7 @@ function flashColors(level) {
         let options = COLORS.filter(color => color !== previousColor);
         let color = options[Math.floor(Math.random() * options.length)];
         gameBox.style.backgroundColor = color;
-        console.log(counter + ": " + color);
+        //console.log(counter + ": " + color);
         previousColor = color;
 
         counter++;
@@ -103,7 +104,8 @@ function stopGame(level) {
     if (counter > NUM_FLASHES) {
         gameBox.style.backgroundColor = 'transparent';
         gameBox.innerHTML = `Congratulations!`;
-        console.log("congratulations!");
+        gameBox.style.color = 'white';
+        //console.log("congratulations!");
         counter = 0;
         setTimeout(() => {
             gameContainer.style.display = 'none';
@@ -111,7 +113,7 @@ function stopGame(level) {
             counter = 0;
             gameBox.innerHTML = '';
             videoContainer.style.display = 'block';
-            console.log('video display');
+            //console.log('video display');
         }, 2000);
     } else {
         gameContainer.style.display = 'none';
@@ -119,7 +121,7 @@ function stopGame(level) {
         counter = 0;
         gameBox.innerHTML = '';
         videoContainer.style.display = 'block';
-        console.log('video display');
+        //console.log('video display');
     }
     if (!endBeepPlayed) {
         beepSound.play(); // Play the start beep sound

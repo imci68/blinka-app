@@ -4,21 +4,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Blinka</title>
     <link rel="icon" type="image/x-icon" href="media/blinka.svg">
   </head>
   <body style="height: 100%;">
-    <header class="bg-info" style="height: 15%; width: 100%;">
-      <img class='logo col-sm-2' src="media/blinka.svg" alt="Blinka Logo" style="display:inline-flex; margin: 0;   width:auto; height:100%; max-height: 120px;">
-      <div class='header-text col-sm-10' style="display:inline-block; width:auto; height:100%;">
+    <!-- <header class="bg-info" style="height: 15%; width: 100%;"> -->
+      <!-- <img class='logo col-sm-2' src="media/blinka.svg" alt="Blinka Logo" style="display:inline-flex;margin: 0;width:auto;height:100%;max-height:120px;padding-left:0px;"> -->
+      <!-- <div class='header-text col-sm-10' style="display:inline-block; width:auto; height:100%;padding-left:0px;">
       <h3 class="title-text">BLINKA</h3>
       <div class="description-text">Revolutionary app to enhance football player's cognitive ability</div>
+    </div> -->
+    <div id="large-header" class="large-header" style="display:inline-block; width:auto; height:100%;padding-left:0px;height: 100%; width: 100%;">
+      <p class="description-text">Revolutionary app to enhance football player's cognitive ability</p>
+        <h1 class="main-title">BLINKA</h1>
     </div>
-    </header>
-    <div class="container-fluid" id="start-page" style="height: 85%">
+    <!-- </header> -->
+    <div class="container-fluid" id="start-page" style="height: 100%">
       <div class="row h-100">
-        <div class="col-sm-4 bg-primary left">
+        <div class="col-sm-4 bg-primary left" style="background: transparent linear-gradient(180deg, #BBE6FC 0%, #343434 52%, #000000 100%) 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;opacity: 1;z-index:1;">
           <h2 class="game-body">Let's Begin</h2>
           <br>
 
@@ -41,15 +46,15 @@
           </script>
           <div class="d-flex justify-content-center mt-3"></div>
         </div>
-        <div class="col-sm-4 bg-warning middle">
+        <div class="col-sm-4 bg-warning middle" style="background: transparent linear-gradient(180deg, #bbfcd0 0%, #343434 52%, #000000 100%) 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;opacity: 1;z-index:1;">
           <h2 class="promo-body">Promo</h2>
           <div class="d-flex justify-content-center mt-5">
-            <div id="video-container" style="text-align: center;">
+            <div id="video-container" style="text-align: center; padding-bottom: 40px;">
               <iframe id="video" style="border:2px solid black;" src="https://www.youtube.com/embed/xE_fQGaC4vI" title="GROUP SOCCER TRAINING IDEAS | Joner Football" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 bg-danger right">
+        <div class="col-sm-4 bg-danger right" style="background: transparent linear-gradient(180deg, #f77272 0%, #343434 52%, #000000 100%) 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;opacity: 1;z-index:1;">
           <h2 class="video-body">Watch More</h2>
           <div class="d-flex justify-content-center mt-5">
             <div id="video-container" style="text-align: center;">
@@ -59,15 +64,18 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" id="game-page" style="display: none; position: relative; height: 80%; margin-top: 5%;">
-      <div id="game-container" style="display: flex; justify-content: center; align-items: center; height: 80%; width: 70%; font-size: 100px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 800;"></div>
+    <div class="container-fluid" id="game-page" style="display: none; position: relative; height: 91%; padding-top: 5%; padding-bottom: 5% ;background: transparent linear-gradient(180deg, #343434 0%, #100c08 52%, #100c08 100%) 0% 0% no-repeat padding-box;box-shadow: 2px 3px 6px #00000029;opacity: 1;z-index:1;">
+      <div id="game-container" style="display: flex; justify-content: center; align-items: center; height: 91%; width: 70%; font-size: 100px; font-family:'Oswald', sans-serif; font-weight: 500; color:white; letter-spacing: 6px;"></div>
       <div style="display: flex; justify-content: center; align-items: center;">
         <button class="btn-stop btn-danger" onClick="stopGame()">Stop Game</button>
       </div>
     </div>
-    <footer class="footer" style="height: 5%">
-      <p class="text-white" style="padding-top: 5px;">Copyright &copy; 2023</p>
+    <div class="footer" style="height: 12%">
+    <footer>
+      <p class="text-white" style="padding-top: 10px;">For more details and enquiries, please contact <a href="mailto:nooj2914@gmail.com">Nooj</a></p>
+      <p class="text-white">Copyright &copy; 2023</p>
     </footer>
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
