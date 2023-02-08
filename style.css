@@ -14,6 +14,8 @@
   }
 } */
 
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
 @media (max-width: 500px) {
   #video-container {
@@ -52,20 +54,9 @@
   float: left;
 }
 
-.description-text {
-  font-size: 1.5vw;
-  color: #00425a;
-  text-align: center;
-}
-
-
-@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 html {
   height: 100%;
 }
-
-
-
 
 body {
   background: #00425a;
@@ -78,22 +69,15 @@ body {
 
 }
 
-.title-text{
-  text-align: center;
-  padding-top: 12px;
-  color: black;
-  font-size: 38px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  position: relative;
-  
-}
-
 .description-text{
   /* font-size: 18px; */
+  padding-top: 250px;
   text-align: center;
-  color: #000000;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding-bottom: 10px;
+  color: white;
+  font-family:'Oswald', sans-serif; 
+  font-weight:250;
+  letter-spacing: 4px;
+  font-size: 2vw;
   position: relative;
 
 }
@@ -102,12 +86,16 @@ body {
   text-align: center;
   margin-top: 10px;
   color: black;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family:'Oswald', sans-serif; 
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .game-body, .promo-body, .video-body{
   text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Oswald', sans-serif; 
+  font-weight:500;
+  letter-spacing: 2px;
   color: black;
   padding-top: 25px;
 }
@@ -121,8 +109,9 @@ body {
 
 .start-btn-text{
   color: black;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 600;
+  font-family:'Oswald', sans-serif; 
+  letter-spacing: 2px;
+  font-weight: 500;
 
 }
 
@@ -145,8 +134,9 @@ body {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 700;
+  font-family:'Oswald', sans-serif; 
+  letter-spacing: 2px;
+  font-weight: 500;
   border-color: black;
 }
 
@@ -182,9 +172,9 @@ button {
 }
 
 #game-container {
-  height: 250px;
+  height: 300px;
   width: 400px;
-  margin: 5px auto;
+  margin: auto;
   display: none;
   border-color: black;
 }
@@ -207,7 +197,9 @@ button {
 .footer {
   background-color: black;
   text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Oswald', sans-serif; 
+  font-weight:500;
+  letter-spacing: 2px;
   
 }
 
@@ -221,4 +213,43 @@ button {
   .header-text {
     float: none;
   }
+}
+
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+#large-header {
+	background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding-top: 40px;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+  text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+  font-weight: 300;
+  color: white;
+}
+
+
+@media only screen and (max-width : 768px) {
+	.demo-1 .main-title {
+		font-size: 3em;
+	}
 }

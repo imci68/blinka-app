@@ -45,6 +45,7 @@ function startGame(level) {
             clearInterval(countdownInterval);
 
             gameBox.innerHTML = '';
+            gameBox.style.color = "white"
             if (!startBeepPlayed) {
                 beepSound.play(); // Play the start beep sound
                 startBeepPlayed = true;
@@ -103,6 +104,7 @@ function stopGame(level) {
     if (counter > NUM_FLASHES) {
         gameBox.style.backgroundColor = 'transparent';
         gameBox.innerHTML = `Congratulations!`;
+        gameBox.style.color = "white"
         console.log("congratulations!");
         counter = 0;
         setTimeout(() => {
