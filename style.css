@@ -7,11 +7,18 @@
   }
   .description-text {
     width: 100%;
+    font-size: 20px;
+    display: flex;
   }
-  iframe {
+  .iframe {
     height: 300px;
     width: 300px;
     justify-content: center ;
+  }
+  .btn
+  {
+    width: auto;
+    display: flex;
   }
 }
 
