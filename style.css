@@ -44,13 +44,13 @@ body {
 }
 
 .description-text{
-  padding-top: 250px;
+  padding-top: 240px;
   text-align: center;
   color: white;
   font-family:'Oswald', sans-serif; 
   font-weight:250;
   letter-spacing: 4px;
-  font-size: 4vw;
+  font-size: 24px;
   position: relative;
 
 }
