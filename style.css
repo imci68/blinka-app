@@ -7,8 +7,6 @@
   }
   .description-text {
     width: 100%;
-    text-align: center;
-    font-size: 1px;
   }
 }
 
@@ -52,7 +50,7 @@ body {
   font-family:'Oswald', sans-serif; 
   font-weight:250;
   letter-spacing: 4px;
-  font-size: 2vw;
+  font-size: 4vw;
   position: relative;
 
 }
@@ -226,12 +224,10 @@ button {
   color: white;
 }
 
-
 .container {
   position: relative;
   width: 24px;
   height: 24px;
-
 }
 
 .chevron {
