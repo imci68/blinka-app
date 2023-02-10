@@ -26,30 +26,41 @@ html {
   height: 100%;
 }
 
-.col-sm-12.bg-primary.top {
-  background: transparent linear-gradient(180deg, #BBE6FC 0%, #343434 52%, #000000 100%) 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  opacity: 1;
-  z-index:1;
-}
-
-.logo{
-  height: 15%;
-  position: absolute;
-  padding-left: 0px;
-
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding-top: 40px;
+	color: #c2bc94;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+  text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+  font-weight: 350;
 }
 
 .description-text{
   padding-top: 240px;
   text-align: center;
-  color: white;
+  color: #c2bc94;
   font-family:'Oswald', sans-serif; 
   font-weight:250;
   letter-spacing: 4px;
   font-size: 24px;
   position: relative;
+  text-transform: uppercase;
+}
 
+.game-description{
+  color: black;
+  text-align: center;
+  font-family:'Oswald', sans-serif; 
+  font-weight:500;
+  position: relative;
+  padding-bottom: 2%;
 }
 
 #level-selector {
@@ -153,6 +164,27 @@ button {
   margin: 10px;
 }
 
+.col-sm-12.bg-primary.top {
+  background: transparent linear-gradient(180deg, #006bc9 0%, #343434 52%, #000000 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  z-index:1;
+}
+
+.col-sm-12.bg-warning.middle{
+  background: transparent linear-gradient(180deg, #00c96b 0%, #343434 52%, #000000 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  z-index:1;
+}
+
+.col-sm-12.bg-danger.bottom{
+  background: transparent linear-gradient(180deg, #c93600 0%, #343434 52%, #000000 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  z-index:1;
+}
+
 #game-container {
   margin: auto;
   border-color: black;
@@ -217,31 +249,6 @@ button {
 	background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');
 }
 
-.game-description{
-  color: black;
-  text-align: center;
-  font-family:'Oswald', sans-serif; 
-  font-weight:200;
-  position: relative;
-  padding-bottom: 2%;
-}
-
-.main-title {
-	position: absolute;
-	margin: 0;
-	padding-top: 40px;
-	color: #f9f1e9;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
-  text-transform: uppercase;
-	font-size: 4.2em;
-	letter-spacing: 0.1em;
-  font-weight: 300;
-}
-
 .container {
   position: relative;
   width: 24px;
@@ -274,7 +281,7 @@ button {
   top: 0;
   height: 100%;
   width: 51%;
-  background: #fff;
+  background: #c2bc94;;
 }
 
 .chevron:before {
@@ -325,3 +332,5 @@ button {
     opacity: 1;
   }
 }
+
+
