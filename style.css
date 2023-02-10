@@ -11,6 +11,10 @@
     display: flex;
     padding-bottom: 40px;
   }
+  
+  .main-title{
+    padding-top: 10px;
+  }
   .iframe {
     height: 300px;
     width: 300px;
