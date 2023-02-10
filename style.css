@@ -9,6 +9,7 @@
     width: 100%;
     font-size: 20px;
     display: flex;
+    padding-bottom: 40px;
   }
   .iframe {
     height: 300px;
@@ -20,6 +21,10 @@
     width: auto;
     display: flex;
   }
+  .start-btn-text{
+    font-size: 8px;
+    justify-content: center;
+}
 }
 
 .bg-info {
@@ -103,15 +108,16 @@ html {
 #startBtn{
   background-color: #38E54D;
   border: #38E54D;
-  width: 100%;
+  width: 200px;
   height: 45px;
 }
 
 .start-btn-text{
   color: black;
   font-family:'Oswald', sans-serif; 
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 500;
+  font-size: 18px;
 
 }
 
