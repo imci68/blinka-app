@@ -1,12 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   #video-container {
-    padding-bottom: 75%;
+    display: flex;
   }
   .description-text {
     width: 100%;
+  }
+  iframe {
+    height: 300px;
+    width: 300px;
+    justify-content: center ;
   }
 }
 
@@ -17,23 +22,15 @@
   float: left;
 }
 
-.logo {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  float: left;
-}
-
 html {
   height: 100%;
 }
 
-body {
-  background: #00425a;
-}
-
-.container-fluid {
-  overflow-y: scroll;
+.col-sm-12.bg-primary.top {
+  background: transparent linear-gradient(180deg, #BBE6FC 0%, #343434 52%, #000000 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  z-index:1;
 }
 
 .logo{
@@ -64,20 +61,32 @@ body {
   letter-spacing: 2px;
 }
 
-.game-body, .promo-body, .video-body{
+.game-body{
   text-align: center;
   font-family:'Oswald', sans-serif; 
   font-weight:500;
   letter-spacing: 2px;
   color: black;
   padding-top: 25px;
+  height: 100px;
+}
+
+.promo-body, .video-body{
+  text-align: center;
+  font-family:'Oswald', sans-serif; 
+  font-weight:500;
+  letter-spacing: 2px;
+  color: black;
+  padding-top: 25px;
+  height: 8%;
+  padding-bottom: 20px;
 }
 
 #startBtn{
   background-color: #38E54D;
   border: #38E54D;
   width: 100%;
-  height: 50px;
+  height: 45px;
 }
 
 .start-btn-text{
@@ -166,11 +175,11 @@ button {
 }
 
 #video {
-  width: 100%;
-  height: 100%;
   position: relative;
-  top: 0;
-  left: 0;
+  border:2px solid black; 
+  height: 450px; 
+  width: 750px;
+  padding-bottom: 50px;
 }
 
 .footer {
@@ -179,6 +188,7 @@ button {
   font-family:'Oswald', sans-serif; 
   font-weight:500;
   letter-spacing: 2px;
+  bottom: 10%;
 }
 
 @media screen and (max-width: 500px) {
@@ -207,6 +217,15 @@ button {
 	background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');
 }
 
+.game-description{
+  color: black;
+  text-align: center;
+  font-family:'Oswald', sans-serif; 
+  font-weight:200;
+  position: relative;
+  padding-bottom: 2%;
+}
+
 .main-title {
 	position: absolute;
 	margin: 0;
@@ -221,17 +240,17 @@ button {
 	font-size: 4.2em;
 	letter-spacing: 0.1em;
   font-weight: 300;
-  color: white;
 }
 
 .container {
   position: relative;
   width: 24px;
   height: 24px;
+  justify-content: center;
 }
 
 .chevron {
-  position: absolute;
+  position: relative;
   width: 28px;
   height: 8px;
   opacity: 0;
@@ -280,7 +299,7 @@ button {
   }
   67% {
     opacity: 1;
-    transform: translateY(40px);
+    transform: translateY(50px);
   }
   100% {
     opacity: 0;
