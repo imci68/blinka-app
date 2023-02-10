@@ -1,19 +1,3 @@
-/* @media (max-width: 767px) {
-  #video-container {
-    padding-bottom: 75%;
-  }
-  .description-text {
-    width: 100%;
-    text-align: center;
-  }
-  .logo {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    float: left;
-  }
-} */
-
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
@@ -26,18 +10,6 @@
     text-align: center;
     font-size: 1px;
   }
-  /* .description-text {
-    width: 100%;
-    text-align: center;
-    border: 2px solid black;
-    font-size: 3px;
-  } */
-  /* .logo {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    float: left;
-  } */
 }
 
 .bg-info {
@@ -70,7 +42,6 @@ body {
 }
 
 .description-text{
-  /* font-size: 18px; */
   padding-top: 250px;
   text-align: center;
   color: white;
@@ -179,19 +150,18 @@ button {
   border-color: black;
 }
 
-
 #video-container {
   text-align: center;
   position: relative;
   overflow: hidden;
 }
+
 #video {
   width: 100%;
   height: 100%;
   position: relative;
   top: 0;
   left: 0;
-
 }
 
 .footer {
@@ -200,7 +170,6 @@ button {
   font-family:'Oswald', sans-serif; 
   font-weight:500;
   letter-spacing: 2px;
-  
 }
 
 @media screen and (max-width: 500px) {
@@ -215,7 +184,6 @@ button {
   }
 }
 
-/* Header */
 .large-header {
 	position: relative;
 	width: 100%;
@@ -248,8 +216,86 @@ button {
 }
 
 
-@media only screen and (max-width : 768px) {
-	.demo-1 .main-title {
-		font-size: 3em;
-	}
+.container {
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+  text-align: center;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
 }
