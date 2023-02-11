@@ -9,11 +9,11 @@
     <title>Blinka</title>
     <link rel="icon" type="image/x-icon" href="media/blinka.svg">
   </head>
-  <body style="height: 100%;">
-    <div id="large-header" class="large-header" style="display:inline-block; width:auto; height:100%;padding-left:0px;height: 100%; width: 100%;">
+  <body>
+    <div id="large-header" class="large-header" style="display:inline-block; padding-left:0px;height: 100%; width: 100%;">
         <h1 class="main-title">BLINKA</h1>
         <p class="description-text">Revolutionary app to enhance football player's cognitive ability</p>
-        <div class="container" style="left: 43.5%; top: 33%;">
+        <div class="container scroller">
           <div class="chevron"></div>
           <div class="chevron"></div>
           <div class="chevron"></div>
@@ -21,8 +21,8 @@
         </div>
     </div>
     <!-- </header> -->
-    <div class="container-fluid" id="start-page" style="height: 100%">
-      <div class="row h-100">
+    <div class="container-fluid" id="start-page">
+      <div class="row">
         <div class="col-sm-12 bg-primary top">
           <h2 class="game-body">Let's Begin</h2>
           <h3 class="game-description">Please select a level below and start the game!</h2>
@@ -61,20 +61,26 @@
             </div>
           </div>
         </div>
+        <div class="footer col-sm-12">
+          <footer>
+            <p class="text-white" style="padding-top: 10px;">For more details and enquiries, please contact <a href="mailto:nooj2914@gmail.com">Nooj</a></p>
+            <p class="text-white">Copyright &copy; 2023</p>
+          </footer>
+        </div>
       </div>
     </div>
-    <div class="container-fluid" id="game-page" style="display: none; position: relative; height: 91%; padding-top: 5%; padding-bottom: 5% ;background: transparent linear-gradient(180deg, #343434 0%, #100c08 52%, #100c08 100%) 0% 0% no-repeat padding-box;box-shadow: 2px 3px 6px #00000029;opacity: 1;z-index:1;">
-      <div id="game-container"></div>
-      <div style="display: flex; justify-content: center; align-items: center;">
+    <div class="container-fluid" id="game-page" style="display: none; padding-top: 5%; background: transparent linear-gradient(180deg, #343434 0%, #100c08 52%, #100c08 100%) 0% 0% no-repeat padding-box;box-shadow: 2px 3px 6px #00000029;opacity: 1;z-index:1;">
+      <div id="game-container" class="col-sm-12 top"></div>
+      <div class="col-sm-12 middle" style="display: flex; justify-content: center; align-items: center; padding-top: 40px; padding-bottom: 20px;">
         <button class="btn-stop btn-danger" onClick="stopGame()">Stop Game</button>
       </div>
+      <div class="footer col-sm-12 bottom" style="width: 100%; display: flex; justify-content: center; height: 14%;">
+        <footer>
+          <p class="text-white" style="padding-top: 10px;">For more details and enquiries, please contact <a href="mailto:nooj2914@gmail.com">Nooj</a></p>
+          <p class="text-white">Copyright &copy; 2023</p>
+        </footer>
+      </div>
     </div>
-    <div class="footer" style="height: 12%">
-    <footer>
-      <p class="text-white" style="padding-top: 10px;">For more details and enquiries, please contact <a href="mailto:nooj2914@gmail.com">Nooj</a></p>
-      <p class="text-white">Copyright &copy; 2023</p>
-    </footer>
-  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -1,6 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
+html{
+  height:100%;
+  box-sizing: border-box;
+  /* overflow-y: scroll; */
+}
+
+body {
+  position: relative;
+  margin:0;
+  padding:0;
+  min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 @media (max-width: 767px) {
   #video-container {
     display: flex;
@@ -8,12 +27,12 @@
   .description-text {
     width: 100%;
     font-size: 20px;
-    display: flex;
-    padding-bottom: 40px;
+    bottom: 20%;
+    padding-bottom: 10px;
   }
   
   .main-title{
-    padding-top: 10px;
+    padding-top: 30px;
   }
   .iframe {
     height: 300px;
@@ -38,14 +57,10 @@
   float: left;
 }
 
-html {
-  height: 100%;
-}
-
 .main-title {
 	position: absolute;
 	margin: 0;
-	padding-top: 40px;
+	padding-top: 50px;
 	color: #c2bc94;
 	text-align: center;
 	top: 50%;
@@ -56,18 +71,20 @@ html {
 	font-size: 4.2em;
 	letter-spacing: 0.1em;
   font-weight: 350;
+
 }
 
 .description-text{
-  padding-top: 240px;
+  padding-top: 200px;
+  margin-bottom: 60px;
   text-align: center;
   color: #c2bc94;
   font-family:'Oswald', sans-serif; 
   font-weight:250;
   letter-spacing: 4px;
   font-size: 24px;
-  position: relative;
   text-transform: uppercase;
+
 }
 
 .game-description{
@@ -208,7 +225,7 @@ button {
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  height: 91%; 
+  height: 80%; 
   width: 70%; 
   font-size: 10vw; 
   font-family:'Oswald', sans-serif; 
@@ -237,7 +254,9 @@ button {
   font-family:'Oswald', sans-serif; 
   font-weight:500;
   letter-spacing: 2px;
-  bottom: 10%;
+  /* position: absolute; */
+  bottom: 0;
+  /* bottom: 10%; */
 }
 
 @media screen and (max-width: 500px) {
@@ -267,14 +286,17 @@ button {
 }
 
 .container {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  justify-content: center;
+  position: absolute;
+	margin: 0;
+	color: #c2bc94;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+  font-weight: 350;
+  left: 47%;
+  bottom: 0px;
 }
 
 .chevron {
-  position: relative;
   width: 28px;
   height: 8px;
   opacity: 0;
@@ -334,7 +356,7 @@ button {
 .text {
   display: block;
   margin-top: 75px;
-  margin-left: -30px;
+  margin-left: -55px;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 12px;
   color: #fff;
@@ -348,6 +370,11 @@ button {
   to {
     opacity: 1;
   }
+}
+
+.container-fluid {
+  min-height:100%;
+  position:relative;
 }
 
 
